@@ -1,0 +1,52 @@
+.main-display{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    margin-top: 24px;
+    box-shadow: 1px 2px 10px 4px rgba(124, 124, 124, 0.4);
+}
+  
+.pic{
+    width: 450px;
+    height: 400px;
+    object-fit:contain;
+    border-radius: 30px;
+}
+  
+.item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+  
+  
+.heading{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+}
+  
+.date {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+}
+  
+.desc {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
