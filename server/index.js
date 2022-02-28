@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const connectDB = require('./db/db');
 
 dotenv.config();
 
@@ -12,6 +13,8 @@ app.use(express.urlencoded({
 }));
 app.use(cors());
 app.use(express.json());
+
+connectDB();
 
 app.use("/", async (req, res) => {
     res.write('<h1>Backend server running!</h1>')
