@@ -3,6 +3,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
+const userRouter = require('./routes/userRoutes')
+
 dotenv.config();
 
 const PORT = 4000;
@@ -15,6 +17,8 @@ app.use(cors());
 app.use(express.json());
 
 connectDB();
+
+app.use("/account", userRouter);
 
 app.use("/", async (req, res) => {
     res.write('<h1>Backend server running!</h1>')
