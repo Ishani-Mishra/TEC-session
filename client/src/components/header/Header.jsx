@@ -1,20 +1,39 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./header.css"
 import logo from "../../assets/logo.png"
 
-function Header() {
+function Header(props) {
+
+  const {logOutHandle, isLogout} = props;
+
     return (
-        <>
+        // <Router>
           <div className="header">
             <div className="logo">
-                <Link className="Link" to={'/'}>
-                    <img alt="logo" src={logo}></img>
-                </Link>
+              <Link className="Link" to={'/'}>
+                <img alt="logo" src={logo}></img>
+              </Link>
             </div>
+            {
+              !isLogout && (
+              <>
+                <Link to={"#"}>Create Ad</Link>
+                <Link to={"#"}>Update Ad</Link>
+                <Link to={"#"}>Delete Ad</Link>
+                <Link to={"#"} onClick={logOutHandle}>Signout</Link>
+              </>                
+            )}
+            {
+              isLogout && (
+                <>
+                  <Link to={"/signup"}>Register</Link>
+                  <Link to={"/signin"}>Login</Link>
+                </>
+            )}
             <div className="tagline">WE MINIMIZE E-WASTE</div>
           </div>  
-        </>
+      /* </Router> */
     )
 }
 
