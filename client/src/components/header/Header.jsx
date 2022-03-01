@@ -17,21 +17,32 @@ function Header(props) {
             </div>
             {
               !isLogout && (
-              <>
-                <Link to={"/compose"}>Create Ad</Link>
-                <Link to={"#"}>Update Ad</Link>
-                <Link to={"#"}>Delete Ad</Link>
-                <Link to={"#"} onClick={logOutHandle}>Signout</Link>
-              </>                
+              <div className="tabs">
+                <div className="tab-i">
+                  <Link to={"/compose"} className="Link">CREATE AD</Link>
+                </div>
+                <div className="tab-i">
+                  <Link to={"#"} className="Link">UPDATE AD</Link>
+                </div>
+                <div className="tab-i">
+                  <Link to={"#"} className="Link">DELETE AD</Link>
+                </div>
+                <div className="tab-i">
+                  <Link to={"#"} onClick={logOutHandle} className="Link">SIGNOUT</Link>
+                </div>
+              </div>                
             )}
             {
               isLogout && (
-                <>
-                  <Link to={"/signup"}>Register</Link>
-                  <Link to={"/signin"}>Login</Link>
-                </>
+                <div className="tabs">
+                  <div className="tab-i">
+                    <Link to={"/signup"} className="Link">SIGN UP</Link>
+                  </div>
+                  <div className="tab-i">
+                    <Link to={"/signin"} className="Link">SIGN IN</Link>
+                  </div>
+                </div>
             )}
-            <div className="tagline">WE MINIMIZE E-WASTE</div>
           </div>  
       /* </Router> */
     )
