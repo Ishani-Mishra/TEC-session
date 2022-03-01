@@ -3,7 +3,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
-const userRouter = require('./routes/userRoutes')
+const userRouter = require('./routes/userRoutes');
+const adRouter = require('./routes/adsRoutes');
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/account", userRouter);
+app.use("/ads", adRouter);
 
 app.use("/", async (req, res) => {
     res.write('<h1>Backend server running!</h1>')

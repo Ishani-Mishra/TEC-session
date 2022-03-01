@@ -18,7 +18,7 @@ function Header(props) {
             {
               !isLogout && (
               <>
-                <Link to={"#"}>Create Ad</Link>
+                <Link to={"/compose"}>Create Ad</Link>
                 <Link to={"#"}>Update Ad</Link>
                 <Link to={"#"}>Delete Ad</Link>
                 <Link to={"#"} onClick={logOutHandle}>Signout</Link>

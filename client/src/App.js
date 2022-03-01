@@ -8,6 +8,7 @@ import Header from "../src/components/header/Header"
 import Display from "../src/components/display/Display"
 import SignUp from "../src/components/signup/signup"
 import SignIn from "../src/components/signin/signin"
+import Compose from "./components/compose/compose";
 
 function App(props) {
 
@@ -32,6 +33,7 @@ function App(props) {
           <Header logOutHandle={logOutHandle} isLogout={isLogout}/>
           <Routes>
             <Route path="/" element={<Display />} exact/>
+            <Route path="/compose" element={<Compose />} />
             <Route path='/signup' element={<SignUp />} />
             <Route path="/signin" element={<SignIn {...props} isLogout={isLogout} setIsLogout={setIsLogout} />}/>  
           </Routes>
