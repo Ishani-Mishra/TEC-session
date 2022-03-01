@@ -123,9 +123,9 @@ router.get("/display/all", async (req, res) => {
 router.get("/display/user=:id", authenticateToken, async(req, res) => {
     console.log("wordking", "params: ", req.params.id);
     const userid = req.params.id;
-    Blog.find({
+    Ads.find({
         authorId: userid
-    }, async (err, blogs) => {
+    }, async (err, ads) => {
         if(err){
             return res.send({
                 succes: false,
@@ -143,7 +143,7 @@ router.get("/display/user=:id", authenticateToken, async(req, res) => {
 router.post("/delete/ad=:adid", authenticateToken, async(req, res) => {
     console.log("working params: ",  "adid: ", req.params.adid);
     const adid = req.params.adid;
-    Blog.deleteOne({
+    Ads.deleteOne({
         _id: adid
     }, async(err, response) => {
         if(err){
