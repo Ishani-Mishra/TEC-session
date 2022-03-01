@@ -35,7 +35,7 @@ export const composeAd = (adDetails, token) => axios.post(`${adUrl}/compose`, ad
     }
 );
 
-export const deleteAd = (adid, token) => axios.post(`${adUrl}/delete/blog=${adid}`, null, 
+export const deleteAd = (adid, token) => axios.post(`${adUrl}/delete/ad=${adid}`, null, 
     {
         headers: {
             Authorization: `BEARER ${token}`,

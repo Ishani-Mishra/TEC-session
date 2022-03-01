@@ -3,7 +3,7 @@ import P1 from "../../assets/batteries.jpg"
 import "./items.css"
 
 export default function Items(props) {
-    const {title, description, agent} = props;
+    const {title, description, agent, del, delAds, id} = props;
   return (
     <>
         <div className="main-display">
@@ -28,6 +28,11 @@ export default function Items(props) {
                     }
                    
                 </div>
+                {
+                    del && (
+                        <button onClick={() => delAds(id)}>Delete Ad</button>
+                    )
+                }
             </div>
         </div>
     </>

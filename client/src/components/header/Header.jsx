@@ -8,7 +8,6 @@ function Header(props) {
   const {logOutHandle, isLogout} = props;
 
     return (
-        // <Router>
           <div className="header">
             <div className="logo">
               <Link className="Link" to={'/'}>
@@ -25,7 +24,7 @@ function Header(props) {
                   <Link to={"#"} className="Link">UPDATE AD</Link>
                 </div>
                 <div className="tab-i">
-                  <Link to={"#"} className="Link">DELETE AD</Link>
+                  <Link to={"/delete"} className="Link">DELETE AD</Link>
                 </div>
                 <div className="tab-i">
                   <Link to={"#"} onClick={logOutHandle} className="Link">SIGNOUT</Link>
@@ -44,7 +43,6 @@ function Header(props) {
                 </div>
             )}
           </div>  
-      /* </Router> */
     )
 }
 
