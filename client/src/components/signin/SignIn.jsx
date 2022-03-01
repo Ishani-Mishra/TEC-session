@@ -46,7 +46,7 @@ function SignIn(props) {
                 <div className="main main-raised">
                     <div className="container signin">
                     <div  className="signin-heading">
-                        <h1 className="heading-per-page">Login</h1>
+                        <h1 className="heading-per-page">SIGN IN</h1>
                     </div>
                         <form onSubmit={handleSubmit} className="signin-form">
                             <div className="input-values">

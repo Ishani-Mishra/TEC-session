@@ -1,5 +1,5 @@
 import React from 'react'
-import P1 from "../../assets/phone.jpg"
+import P1 from "../../assets/batteries.jpg"
 import "./items.css"
 
 export default function Items() {

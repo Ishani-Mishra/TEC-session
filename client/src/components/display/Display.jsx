@@ -10,13 +10,23 @@ export default function Display() {
         </div>
         <div className="item-single">
             <Item />
-        </div>        <div className="item-single">
+        </div>        
+        <div className="item-single">
             <Item />
-        </div>        <div className="item-single">
+        </div>        
+        <div className="item-single">
             <Item />
-        </div>        <div className="item-single">
+        </div>        
+        <div className="item-single">
             <Item />
-        </div>        <div className="item-single">
+        </div>        
+        <div className="item-single">
+            <Item />
+        </div>
+        <div className="item-single">
+            <Item />
+        </div>
+        <div className="item-single">
             <Item />
         </div>
     </div>

@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import Header from "../src/components/header/Header"
 import Display from "../src/components/display/Display"
-import SignUp from "../src/components/signup/signup"
-import SignIn from "../src/components/signin/signin"
+import Signup from "./components/signup/Signup"
+import SignIn from "./components/signin/SignIn"
 
 function App(props) {
 
@@ -32,7 +32,7 @@ function App(props) {
           <Header logOutHandle={logOutHandle} isLogout={isLogout}/>
           <Routes>
             <Route path="/" element={<Display />} exact/>
-            <Route path='/signup' element={<SignUp />} />
+            <Route path='/signup' element={<Signup />} />
             <Route path="/signin" element={<SignIn {...props} isLogout={isLogout} setIsLogout={setIsLogout} />}/>  
           </Routes>
         </Fragment>

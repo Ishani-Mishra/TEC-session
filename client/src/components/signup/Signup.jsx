@@ -3,7 +3,7 @@ import {Navigate, useNavigate} from 'react-router-dom';
 import {signupNewUser} from '../../api/userApi';
 import './signup.css';
 
-function SignUp(props) {
+function Signup(props) {
 
     const history = useNavigate();
 
@@ -51,7 +51,7 @@ function SignUp(props) {
                 <div className="main main-raised">
                     <div className="container signup">
                         <div  className="signup-heading">
-                            <h1 className="heading-per-page">Signup</h1>
+                            <h1 className="heading-per-page">SIGN UP</h1>
                         </div>
                         <form onSubmit={handleSubmit} className="signup-form">
                             <div className="input-values">
@@ -78,4 +78,4 @@ function SignUp(props) {
     
 }
  
-export default SignUp;
+export default Signup;
