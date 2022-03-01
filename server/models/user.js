@@ -23,11 +23,6 @@ const UserSchema = new Schema({
         required: true,
         default: ''
     },
-    dateCreated: {
-        type: String,
-        required: false,
-        default: ''
-    },
     noOfAds: {
         type: String,
         required: false,
@@ -40,9 +35,6 @@ UserSchema.pre('save', async function (next) {
     if(user.isModified('password')){
         user.password = await bcrypt.hash(user.password, 8);
     }
-    const timeElapsed = Date.now();
-    const todayDate = new Date(timeElapsed);
-    user.dateCreated = todayDate.toUTCString();
     next();
 })
 

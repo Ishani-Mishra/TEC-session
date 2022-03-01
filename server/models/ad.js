@@ -21,19 +21,6 @@ const AdsSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
-    dateCreated: {
-        type: String,
-        required: false,
-        default: ''
-    }
-})
-
-AdsSchema.pre('save', async function (next){
-    const ad = this;
-    const timeElapsed = Date.now();
-    const todayDate = new Date(timeElapsed);
-    ad.dateCreated = todayDate.toUTCString();
-    next();
 })
 
 
