@@ -21,7 +21,7 @@ function Header(props) {
                   <Link to={"/compose"} className="Link">CREATE AD</Link>
                 </div>
                 <div className="tab-i">
-                  <Link to={"#"} className="Link">UPDATE AD</Link>
+                  <Link to={"/update"} className="Link">UPDATE AD</Link>
                 </div>
                 <div className="tab-i">
                   <Link to={"/delete"} className="Link">DELETE AD</Link>

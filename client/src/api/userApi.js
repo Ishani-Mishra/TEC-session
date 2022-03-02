@@ -44,3 +44,19 @@ export const deleteAd = (adid, token) => axios.post(`${adUrl}/delete/ad=${adid}`
 );
 
 
+export const updateAd = (adid, adDetails, token) => axios.post(`${adUrl}/update/ad=${adid}`, adDetails, 
+    {
+        headers: {
+            Authorization: `BEARER ${token}`,
+        }
+    }
+);
+
+// export const updateAd = (adid, token) => axios({
+//     method: "GET",
+//     url: `${adUrl}/update/ad=${adid}`,
+//     headers: {
+//         Authorization: `BEARER ${token}`,
+//     },
+// });
+

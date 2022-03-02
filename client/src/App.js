@@ -10,6 +10,7 @@ import Signup from "./components/signup/Signup"
 import SignIn from "./components/signin/SignIn"
 import Compose from "./components/compose/Compose"
 import Delete from "./components/delete/Delete"
+import Update from "./components/update/Update";
 
 function App(props) {
 
@@ -36,6 +37,7 @@ function App(props) {
             <Route path="/" element={<Display />} exact/>
             <Route path="/compose" element={<Compose />} />
             <Route path="/delete" element={<Delete />} />
+            <Route path="/update" element={<Update/>} />
             <Route path='/signup' element={<Signup />} />
             <Route path="/signin" element={<SignIn {...props} isLogout={isLogout} setIsLogout={setIsLogout} />}/>  
           </Routes>
