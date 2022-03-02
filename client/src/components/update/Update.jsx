@@ -13,7 +13,6 @@ export default function Update(props) {
     const [ad, setAd] = useState("");
     const [title, setTitle] = useState("");
     const [userid, setUserid] = useState("");
-    const [updateStatus, setUpdateStatus] = useState("");
     const [updateResponse, setUpdateResponse] = useState("");
     const [ads, setAds] = useState([]);
     const [updateAdid, setUpdateAdid] = useState("");
