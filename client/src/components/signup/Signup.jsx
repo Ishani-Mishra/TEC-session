@@ -66,7 +66,7 @@ function Signup(props) {
                                 </div>
                             </div>
                             <div className="submit-btn" Style={"margin-top: 1rem"}>
-                                <button type="submit">Sign Up</button>
+                                <button type="submit" className="button">Sign Up</button>
                             </div>
                         </form>
                     </div>

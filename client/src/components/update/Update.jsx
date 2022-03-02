@@ -108,7 +108,7 @@ export default function Update(props) {
                                 <textarea className="text-area" type="text" cols="111" rows="10" name="blog" value={ad} placeholder="Use this area to compose your advertisement" onChange={(e) => setAd(e.target.value)}/><br/>
                                 <hr Style={"margin-top:1rem"}/>
                                 <div className="submit-btn">
-                                    <button type="submit" onClick={handleSubmit}>Update</button>
+                                    <button type="submit" className="button" onClick={handleSubmit}>Update</button>
                                 </div>
                             </form>
                         </div>

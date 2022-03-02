@@ -20,24 +20,6 @@
     padding: 0.6rem;
 }
 
-.submit-btn {
-    width: 100px;
-    height: 32px;
-    cursor: pointer;
-    background-color: #1AD300;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.submit-btn:hover {
-    width: 102px;
-    height: 34px;
-    background-color: #006746;
-}
-
 .signup {
     padding-top: 7rem;
     padding-bottom: 12.5rem;

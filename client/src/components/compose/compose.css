@@ -24,3 +24,17 @@
     margin: 1rem auto;
     width: fit-content;
 }
+.ad{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+.text-area{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}

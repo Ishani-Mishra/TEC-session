@@ -46,6 +46,9 @@ export default function Display(props) {
         <div className="item-single">
             <Item title={dummyTitle} description={dummyDetails}/>
         </div>
+        <div className="item-single">
+            <Item title={dummyTitle} description={dummyDetails}/>
+        </div>
     </div>
   )
 }
