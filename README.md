@@ -6,7 +6,7 @@ Just head over to the GitHub page and click the "Fork" button. It's just that si
 
 ### Clone your fork to your local machine
 ```
-git clone git@github.com:USERNAME/TEC-session.git
+git clone https://github.com/USERNAME/TEC-session.git
 ```
 USERNAME: your GitHub username
 
