@@ -4,10 +4,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Header from "../src/components/header/Header"
-import Display from "../src/components/display/Display"
+import Header from "./components/header/Header"
+import Display from "./components/display/Display"
 import Signup from "./components/signup/Signup"
 import SignIn from "./components/signin/SignIn"
+import Compose from "./components/compose/Compose"
+import Delete from "./components/delete/Delete"
+import Update from "./components/update/Update";
 
 function App(props) {
 
@@ -32,6 +35,9 @@ function App(props) {
           <Header logOutHandle={logOutHandle} isLogout={isLogout}/>
           <Routes>
             <Route path="/" element={<Display />} exact/>
+            <Route path="/compose" element={<Compose />} />
+            <Route path="/delete" element={<Delete />} />
+            <Route path="/update" element={<Update/>} />
             <Route path='/signup' element={<Signup />} />
             <Route path="/signin" element={<SignIn {...props} isLogout={isLogout} setIsLogout={setIsLogout} />}/>  
           </Routes>
